@@ -1,0 +1,13 @@
+{% extends 'home-with-profile.html' %}
+{% block content %}
+        <div class="body">
+            <h1>Edit Note</h1>
+            <div class="form">
+                <form method="POST">
+                    {{ form }}
+                    {% csrf_token %}
+                    <input type="submit" value="Edit" />
+                </form>
+            </div>
+        </div>
+{% endblock %}
